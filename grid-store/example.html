@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example - Grid Column</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, [column] 1fr 1fr);
+            grid-template-rows: 1fr;
+            grid-gap: 1.5em;
+        }
+        .column {
+            background-color:blue;
+            grid-column: column 2 /span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam vitae ab odio suscipit corrupti itaque exercitationem culpa dolore nihil voluptates pariatur illum doloribus veritatis, obcaecati, excepturi amet recusandae perspiciatis dolorum?</p>
+        </div>
+    </div>
+</body>
+</html>

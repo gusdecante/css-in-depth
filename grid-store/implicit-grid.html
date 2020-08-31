@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implicit Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 1em;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+        }
+        .something {
+            background-color: blue;
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+
+        .other {
+            background-color: orange;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        .middle {
+            background-color: gray;
+            grid-column: span 1;
+            grid-row: 2 / 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="something">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt dignissimos illo, harum praesentium quibusdam tenetur nobis ipsum vero aspernatur animi ex earum quod corrupti dolores? Amet tempora sapiente optio magnam.</p>
+        </div>
+        <div class="other">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt dignissimos illo, harum praesentium quibusdam tenetur nobis ipsum vero aspernatur animi ex earum quod corrupti dolores? Amet tempora sapiente optio magnam.</p>
+        </div>
+        <div class="middle">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt dignissimos illo, harum praesentium quibusdam tenetur nobis ipsum vero aspernatur animi ex earum quod corrupti dolores? Amet tempora sapiente optio magnam.</p>
+        </div>
+    </div>
+</body>
+</html>
