@@ -57,5 +57,25 @@ button {
 }
 
 .modal-close {
+  position: absolute;
+  right: 0.3em;
+  top: 0.3em;
+  padding: 0.3em;
   cursor: pointer;
+  height: 1em;
+  width: 1em;
+  text-indent: 10em;
+  overflow: hidden;
+}
+
+/* Assistive screen readers
+read the text of the button, so it should give some meaningful indication of the button’s purpose. */
+
+.modal-close::after {
+  position: absolute;
+  line-height: 0.5;
+  top: 0.2em;
+  left: 0.1em;
+  text-indent: 0;
+  content: "\00D7";
 }
