@@ -10,7 +10,7 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  min-height: 200vh;
+  min-height: 500vh;
   margin: 0;
 }
 
@@ -83,9 +83,24 @@ read the text of the button, so it should give some meaningful indication of the
 }
 
 .container {
+  display: flex;
   width: 80%;
   max-width: 1000px;
   margin: 1em auto;
+  height: 100vw;
+}
+
+.col-main {
+  flex: 1 80%;
+}
+
+.col-sidebar {
+  flex: 20%;
+}
+
+.affix {
+  position: sticky;
+  top: 1em;
 }
 
 .dropdown {
