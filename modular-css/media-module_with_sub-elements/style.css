@@ -23,3 +23,7 @@
 .media__body > h4 {
   margin-top: 0;
 }
+
+.media--right > .media__image {
+  float: right;
+}
